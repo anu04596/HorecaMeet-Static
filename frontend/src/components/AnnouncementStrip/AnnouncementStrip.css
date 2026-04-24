@@ -1,0 +1,24 @@
+.announcement-strip {
+  width: 100%;
+  background: #EBC75B;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  overflow: hidden;
+}
+
+.strip-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.strip-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #0A1628;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

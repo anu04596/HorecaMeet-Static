@@ -1,0 +1,63 @@
+.formats-section {
+  width: 100%;
+  background: #F5F0E8;
+  padding: 56px 24px 64px;
+}
+
+/* ── Header ── */
+.formats-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 44px;
+}
+
+.formats-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.eyebrow-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #C9A843;
+  white-space: nowrap;
+}
+
+.eyebrow-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, rgba(201,168,67,0.4), rgba(201,168,67,0));
+}
+
+.formats-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.18;
+  letter-spacing: -1px;
+  color: #0A1628;
+}
+
+.formats-title-accent {
+  color: #C9A843;
+}
+
+.formats-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #8A8880;
+}
+
+/* ── Grid ── */
+.formats-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
