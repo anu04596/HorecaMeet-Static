@@ -1,7 +1,7 @@
 .formats-section {
   width: 100%;
   background: #F5F0E8;
-  padding: 56px 24px 64px;
+  padding: 56px 24px 0; /* Removed bottom padding */
 }
 
 /* ── Header ── */
@@ -37,22 +37,31 @@
 .formats-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 1.18;
+  font-size: clamp(32px, 10vw, 40px);
+  line-height: 1.47; /* 58.8px at 40px font size */
   letter-spacing: -1px;
   color: #0A1628;
+  max-width: 393px;
+  width: 100%;
 }
 
 .formats-title-accent {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #C9A843;
+  display: block; /* Force start from next line */
 }
 
 .formats-subtitle {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.9;
   color: #8A8880;
+  max-width: 393px;
 }
 
 /* ── Grid ── */
@@ -60,4 +69,5 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 40px; /* Add some space before the next section header */
 }

@@ -20,9 +20,12 @@ const HeroSection: React.FC = () => {
 
         <div className="hero-logo-block">
           <h1 className="hero-title">
-            H<span className="hero-title-icon"><img src="logo-static.png" alt="Logo" /></span>RECA
+            H<span className="hero-title-icon"><img src="logo-static2.png" alt="Logo" /></span>RECA
           </h1>
-          <div className="hero-subtitle-line">MEET EXPO 2026</div>
+          <div className="hero-subtitle-container">
+            <div className="hero-subtitle-line-element" />
+            <span className="hero-subtitle-text">MEET EXPO 2026</span>
+          </div>
         </div>
 
         <p className="hero-tagline">
@@ -30,8 +33,16 @@ const HeroSection: React.FC = () => {
         </p>
       </div>
 
+
+
       {/* Hero Second - Stats + Buttons */}
+
       <div className="hero-second">
+
+        <div className="hero-actions">
+          <button className="btn-register">Register Now — Free for Delegates</button>
+          <button className="btn-explore">Explore 7 Formats ↓</button>
+        </div>
         <div className="hero-stats">
           {stats.map((stat) => (
             <div className="stat-item" key={stat.label}>
@@ -41,10 +52,6 @@ const HeroSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="hero-actions">
-          <button className="btn-register">Register Now — Free for Delegates</button>
-          <button className="btn-explore">Explore 7 Formats ↓</button>
-        </div>
       </div>
     </section>
   );

@@ -1,0 +1,185 @@
+.jury-teaser {
+  width: 100%;
+  background: #F5F0E8; /* Same as FormatsSection */
+  padding: 40px 24px 88px; /* Reduced top padding to join section above */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ── Header ── */
+.jury-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 8px;
+  max-width: 393px;
+}
+
+.jury-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.jury-eyebrow-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #C9A843;
+  white-space: nowrap;
+}
+
+.jury-eyebrow-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, rgba(201,168,67,0.4), rgba(201,168,67,0));
+}
+
+.jury-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.225;
+  letter-spacing: -1px;
+  color: #1A1A1A;
+}
+
+.jury-title-plain {
+  color: #1A1A1A;
+}
+
+.jury-title-accent {
+  color: #C9A843;
+}
+
+.jury-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6B6560;
+}
+
+/* ── Chef Cards ── */
+.jury-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: calc(100% - 12px); /* Add slight overall margin */
+  margin: 0 auto;
+}
+
+.chef-card {
+  width: 100%;
+  border-radius: 2.62px;
+  overflow: hidden;
+  background: #F5F0E8;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.chef-card-image {
+  width: 100%;
+  aspect-ratio: 393 / 360;
+  position: relative;
+  background: #0A1628;
+  overflow: hidden;
+}
+
+.chef-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.chef-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #0A1628;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chef-card-info {
+  padding: 16px 20px 20px;
+  background: #FDFAF4;
+}
+
+.chef-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.chef-role {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+  color: #AF870B;
+  line-height: 1.4;
+}
+
+/* ── Social Card ── */
+.jury-social-card {
+  background: rgba(201,168,67,0.05);
+  border: 0.8px solid rgba(201,168,67,0.5);
+  border-radius: 4px;
+  padding: 24px; /* Reduced padding to make it more rectangle */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.jury-social-number {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1;
+  color: #C9A843;
+  text-align: center;
+}
+
+.jury-social-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #162440;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.jury-register-btn {
+  margin-top: 8px;
+  background: #EBC75B;
+  color: #0A1628;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 36px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+  max-width: 296px;
+}
+
+.jury-register-btn:hover {
+  background: #d4b04e;
+}

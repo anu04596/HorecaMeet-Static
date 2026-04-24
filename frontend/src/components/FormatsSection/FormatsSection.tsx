@@ -14,7 +14,7 @@ const FormatsSection: React.FC = () => {
         </div>
 
         <h2 className="formats-title">
-          7 Formats. Each One Solving{' '}
+          7 Formats. Each One Solving
           <span className="formats-title-accent">a Real Industry Problem.</span>
         </h2>
 

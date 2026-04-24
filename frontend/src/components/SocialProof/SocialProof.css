@@ -1,0 +1,179 @@
+/* SocialProof.css */
+
+.social-proof {
+  width: 100%;
+  max-width: 441px;
+  margin: 0 auto;
+  background-color: #F5F0E8; /* Resetted to screen bg as requested */
+  padding: 100px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15.2px;
+  box-sizing: border-box;
+}
+
+/* Label Row */
+.sp-label-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.sp-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #C9A843;
+  white-space: nowrap;
+}
+
+.sp-label-line {
+  flex: 1;
+  height: 1px;
+  background-color: #C9A843;
+  opacity: 0.4;
+}
+
+/* Heading */
+.sp-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  color: #1A1A1A;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.sp-heading-accent {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  color: #C9A843;
+}
+
+/* Subtext */
+.sp-subtext {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  color: #6B6560;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+/* Cards */
+.sp-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.sp-card {
+  width: 100%;
+  max-width: 393px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.sp-card-icon {
+  font-size: 32px; /* Reduced from 40px */
+  line-height: 100%;
+  text-align: center;
+  color: #1A1A1A;
+}
+
+.sp-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px; /* Reduced from 20px */
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: center;
+  color: #0A1628;
+}
+
+.sp-card-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-align: center;
+  color: #6B6560;
+}
+
+/* Buttons */
+.sp-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.sp-btn-primary {
+  width: 331px;
+  height: 53px;
+  padding: 16px 36px;
+  border-radius: 6px;
+  background-color: #EBC75B;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #0A1628;
+  transition: opacity 0.2s ease;
+}
+
+.sp-btn-primary:hover {
+  opacity: 0.9;
+}
+
+.sp-btn-secondary {
+  width: 331px;
+  height: 53px;
+  padding: 16px 36px;
+  border-radius: 6px;
+  background-color: #081964;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+  transition: opacity 0.2s ease;
+}
+
+.sp-btn-secondary:hover {
+  opacity: 0.85;
+}

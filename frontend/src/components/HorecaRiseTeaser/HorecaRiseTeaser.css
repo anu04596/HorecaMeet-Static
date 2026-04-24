@@ -1,0 +1,147 @@
+/* HorecaRiseTeaser.css */
+
+.rise-teaser {
+  width: 100%;
+  max-width: 441px;
+  margin: 0 auto;
+  background-color: #FDFAF4;
+  padding: 88px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15.2px;
+  box-sizing: border-box;
+}
+
+/* Label Row */
+.rise-label-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rise-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #C9A843;
+  white-space: nowrap;
+}
+
+.rise-label-line {
+  flex: 1;
+  height: 1px;
+  background-color: #C9A843;
+  opacity: 0.4;
+}
+
+/* Heading */
+.rise-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.225; /* ~58.8px */
+  letter-spacing: -1px;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+.rise-heading-accent {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.225;
+  letter-spacing: -1px;
+  color: #C9A843;
+}
+
+/* Subtext */
+.rise-subtext {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7; /* ~27.2px */
+  letter-spacing: 0;
+  color: #6B6560;
+  margin: 0;
+}
+
+/* Cards Container */
+.rise-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 32.8px;
+}
+
+/* Individual Card */
+.rise-card {
+  width: 100%;
+  max-width: 393px;
+  background-color: #081964;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.rise-card-price {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #C9A843;
+}
+
+.rise-card-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.rise-card-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.477; /* ~19.2px */
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* CTA */
+.rise-cta-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.rise-cta-btn {
+  width: 331px;
+  height: 53px;
+  padding: 16px 36px;
+  border-radius: 6px;
+  background-color: #EBC75B;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #0A1628;
+  transition: opacity 0.2s ease;
+}
+
+.rise-cta-btn:hover {
+  opacity: 0.9;
+}
