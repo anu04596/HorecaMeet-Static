@@ -61,3 +61,23 @@
   text-transform: uppercase;
   white-space: nowrap;
 }
+
+.card-action-btn {
+  margin-top: 16px;
+  background: #EBC75B;
+  color: #0A1628;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+
+.card-action-btn:hover {
+  opacity: 0.9;
+}

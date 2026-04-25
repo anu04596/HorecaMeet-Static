@@ -1,0 +1,289 @@
+.chef-page-container {
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  font-family: 'DM Sans', sans-serif;
+  width: 100%;
+}
+
+/* ─────────────── HERO ─────────────── */
+.chef-hero {
+  background: #081964;
+  width: 100%;
+  padding: 40px 20px;
+  /* mt-[94px] removed since navbar is likely absolute or not present in this standalone page 
+     If a navbar is needed, we should include Navbar component and add padding-top */
+}
+
+.chef-hero-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.chef-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  margin-top: 8px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.chef-breadcrumb-home {
+  font-size: 13px;
+  color: #C9A843;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.chef-breadcrumb-home:hover {
+  opacity: 0.8;
+}
+
+.chef-breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+}
+
+.chef-breadcrumb-current {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+}
+
+.chef-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(48px, 5.5vw, 72px);
+  line-height: 1.1;
+  color: #FFFFFF;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.chef-hero-title-accent {
+  color: #C9A843;
+}
+
+.chef-hero-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(13px, 1.2vw, 15px);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 600px;
+}
+
+/* ─────────────── BLACK BOX FORMAT ─────────────── */
+.chef-black-box-section {
+  padding: 60px 24px;
+  background-color: #FFFFFF;
+}
+
+.chef-black-box-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.chef-black-box-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+/* Left */
+.chef-black-box-left {
+  flex: 1;
+}
+
+.chef-label-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.chef-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #C9A843;
+  text-transform: uppercase;
+}
+
+.chef-label-line {
+  flex: 1;
+  height: 1px;
+  background: #C9A843;
+  opacity: 0.4;
+}
+
+.chef-section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(32px, 8vw, 42px);
+  line-height: 1.2;
+  color: #0A1628;
+  margin-bottom: 24px;
+  max-width: 568px;
+}
+
+.chef-section-title-accent {
+  color: #C9A843;
+}
+
+.chef-section-body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #6B7280;
+  margin-bottom: 32px;
+}
+
+.chef-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chef-checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.chef-checklist-icon {
+  color: #C9A843;
+  font-size: 15px;
+  margin-top: 1px;
+}
+
+.chef-checklist-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Right — Black Box Card */
+.chef-black-box-card {
+  width: 100%;
+  background: #081964;
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.chef-box-emoji {
+  font-size: 60px;
+  margin-bottom: 24px;
+}
+
+.chef-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+  letter-spacing: -0.3px;
+  margin-bottom: 8px;
+}
+
+.chef-card-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #C9A843;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.chef-inner-box {
+  width: 100%;
+  border-radius: 12px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.chef-inner-box-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.chef-inner-box-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ─────────────── CTA ─────────────── */
+.chef-cta-section {
+  padding: 0 24px 80px;
+  background-color: #FFFFFF;
+}
+
+.chef-cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.chef-cta-box {
+  border-radius: 16px;
+  padding: 48px 32px;
+  text-align: center;
+  background: #F5F0E8;
+}
+
+.chef-cta-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(28px, 6vw, 36px);
+  line-height: 1.2;
+  color: #0A1628;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.chef-cta-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.chef-cta-btn {
+  background: #C9A843;
+  color: #0A1628;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.chef-cta-btn:hover {
+  opacity: 0.9;
+}
+
+

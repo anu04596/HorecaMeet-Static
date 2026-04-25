@@ -6,7 +6,7 @@
   margin: 0 auto;
   background-color: #081964;
   border-top: 1px solid rgba(201, 168, 67, 0.15);
-  padding: 64px 24px 32px 24px;
+  padding: 64px 24px calc(48px + env(safe-area-inset-bottom)) 24px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -50,7 +50,8 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 13px;
-  line-height: 1.7; /* ~22.1px */
+  line-height: 1.7;
+  /* ~22.1px */
   letter-spacing: 0;
   color: rgba(255, 255, 255, 0.35);
   margin: 0;

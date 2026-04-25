@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { juryMembers } from '../../data/jury';
 import './JuryTeaser.css';
 
@@ -11,6 +12,8 @@ const juryImages: Record<string, string> = {
 };
 
 const JuryTeaser: React.FC = () => {
+    const navigate = useNavigate();
+    
     return (
         <section className="jury-teaser">
             {/* ── Section Header ── */}
@@ -65,7 +68,12 @@ const JuryTeaser: React.FC = () => {
             <div className="jury-social-card">
                 <span className="jury-social-number">2.5M+</span>
                 <p className="jury-social-label">Combined Social Following of the Jury Panel</p>
-                <button className="jury-register-btn">Register for Chef Competition</button>
+                <button 
+                    className="jury-register-btn"
+                    onClick={() => navigate('/chef-competition')}
+                >
+                    Register for Chef Competition
+                </button>
             </div>
         </section>
     );
