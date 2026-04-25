@@ -23,7 +23,7 @@ export const juryMembers: JuryMember[] = [
     id: '3',
     name: 'Mr. Michael',
     role: '1.4M Instagram · 900K YouTube',
-    imagePlaceholder: true,
+    imagePlaceholder: false,
   },
   {
     id: '4',

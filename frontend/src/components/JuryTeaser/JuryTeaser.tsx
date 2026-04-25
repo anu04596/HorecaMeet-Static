@@ -3,17 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import { juryMembers } from '../../data/jury';
 import './JuryTeaser.css';
 
-// Image imports — replace these paths with your actual images in /public/jury/
 const juryImages: Record<string, string> = {
     '1': 'public/jury/sai-kumar-sharma.png',
     '2': 'public/jury/anil.png',
-    '3': 'public/jury/michael.jpg',
+    '3': 'public/jury/michael.jpeg',
     '4': 'public/jury/harish.png',
 };
 
 const JuryTeaser: React.FC = () => {
     const navigate = useNavigate();
-    
+
     return (
         <section className="jury-teaser">
             {/* ── Section Header ── */}
@@ -68,7 +67,7 @@ const JuryTeaser: React.FC = () => {
             <div className="jury-social-card">
                 <span className="jury-social-number">2.5M+</span>
                 <p className="jury-social-label">Combined Social Following of the Jury Panel</p>
-                <button 
+                <button
                     className="jury-register-btn"
                     onClick={() => navigate('/chef-competition')}
                 >
