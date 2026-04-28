@@ -133,7 +133,7 @@ export function ChefCompetitionPage({ onBack, onRegister }: ChefCompetitionPageP
         <div className="chef-cta-container">
           <div className="chef-cta-box">
             <h2 className="chef-cta-title">
-              20 spots only. Register before they fill.
+              24 spots only. Register before they fill.
             </h2>
             <p className="chef-cta-subtitle">
               Registration is open now. Celebrity jury. Real prize money. Your stage.

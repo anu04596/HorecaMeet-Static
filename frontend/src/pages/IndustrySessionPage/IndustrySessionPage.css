@@ -1,0 +1,349 @@
+/* ─── IndustrySessionsPage Mobile CSS ─── */
+
+.isp-root {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ── HERO ── */
+.isp-hero {
+  background: #091A63;
+  padding: 40px 20px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.isp-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  right: -40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(201, 168, 67, 0.06);
+  pointer-events: none;
+}
+
+.isp-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.isp-breadcrumb-home {
+  background: none;
+  border: none;
+  color: #EBC75B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.isp-breadcrumb-sep {
+  color: #EBC75B;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.isp-breadcrumb-current {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.isp-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin: 0 0 14px;
+}
+
+.isp-hero-title-gold {
+  color: #EBC75B;
+}
+
+.isp-hero-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+/* ── RULE NOTICE ── */
+.isp-rule-section {
+  padding: 20px 16px;
+}
+
+.isp-rule-card {
+  background: #FFFCF3;
+  border: 1px solid #FBECC8;
+  border-radius: 16px;
+  padding: 18px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.isp-rule-icon {
+  background: #FFF9E5;
+  border-radius: 10px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.isp-rule-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #162440;
+  margin: 0 0 6px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.isp-rule-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(9, 26, 99, 0.6);
+  margin: 0;
+}
+
+/* ── SCHEDULE ── */
+.isp-schedule-section {
+  padding: 8px 16px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.isp-day-card {
+  background: #091A63;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+/* Day Header */
+.isp-day-header {
+  width: 100%;
+  padding: 20px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 12px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.isp-day-header:active {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.isp-day-header-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 1;
+  min-width: 0;
+}
+
+.isp-day-num {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1;
+  color: #C9A843;
+  flex-shrink: 0;
+  width: 30px;
+}
+
+.isp-day-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.isp-day-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 4px;
+}
+
+.isp-day-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 10px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0;
+}
+
+.isp-chevron {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  color: #C9A843;
+}
+
+.isp-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* Sessions */
+.isp-sessions-list {
+  padding: 0 18px 8px;
+}
+
+.isp-session {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.isp-session:last-child {
+  border-bottom: none;
+}
+
+.isp-session-time-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.isp-session-time {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  color: #C9A843;
+  letter-spacing: 0.3px;
+}
+
+.isp-session-location {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(235, 199, 91, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.isp-session-type {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 6px;
+}
+
+.isp-session-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+
+.isp-session-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0 0 12px;
+}
+
+.isp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.isp-tag {
+  border-radius: 100px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 12px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.isp-tag-golden {
+  background: rgba(201, 168, 67, 0.12);
+  border: 1px solid rgba(201, 168, 67, 0.25);
+  color: #C9A843;
+}
+
+.isp-tag-cinnabar {
+  background: rgba(227, 66, 52, 0.1);
+  border: 1px solid rgba(227, 66, 52, 0.25);
+  color: #E34234;
+}
+
+.isp-tag-jungle {
+  background: rgba(29, 122, 74, 0.15);
+  border: 1px solid rgba(29, 122, 74, 0.25);
+  color: #1D7A4A;
+}
+
+.isp-tag-ocean {
+  background: rgba(26, 75, 118, 0.2);
+  border: 1px solid rgba(69, 177, 232, 0.25);
+  color: #45B1E8;
+}
+
+/* ── CTA ── */
+.isp-cta-section {
+  padding: 0 16px 60px;
+  text-align: center;
+}
+
+.isp-cta-btn {
+  width: 100%;
+  background: #C9A843;
+  color: #091A63;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+  line-height: 1.4;
+}
+
+.isp-cta-btn:active {
+  background: #D4B553;
+}
