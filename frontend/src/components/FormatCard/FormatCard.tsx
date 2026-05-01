@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import type { FormatCard as FormatCardType } from '../../data/formats';
 import './FormatCard.css';
 
@@ -7,6 +8,8 @@ interface Props {
 }
 
 const FormatCard: React.FC<Props> = ({ card }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="format-card">
       <span className="card-number">{card.number}</span>
@@ -18,6 +21,16 @@ const FormatCard: React.FC<Props> = ({ card }) => {
           <span className="card-tag" key={tag}>{tag}</span>
         ))}
       </div>
+      <button 
+        className="card-action-btn" 
+        onClick={() => {
+          if (card.linkTo && card.linkTo !== '#') {
+            navigate(card.linkTo);
+          }
+        }}
+      >
+        Learn More
+      </button>
     </div>
   );
 };

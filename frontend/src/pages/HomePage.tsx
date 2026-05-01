@@ -10,6 +10,18 @@ import SocialProof from '../components/SocialProof/SocialProof';
 import Footer from '../components/Footer/Footer';
 
 const HomePage: React.FC = () => {
+  React.useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <div className="app">
       <AnnouncementStrip />
@@ -21,7 +33,7 @@ const HomePage: React.FC = () => {
       <HorecaRiseTeaser />
       <SocialProof />
       {/* AnnouncementStrip repeated at bottom as ticker above footer */}
-      <AnnouncementStrip />
+      
       <Footer />
     </div>
   );

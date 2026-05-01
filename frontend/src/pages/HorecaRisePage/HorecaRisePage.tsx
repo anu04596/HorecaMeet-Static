@@ -8,23 +8,15 @@ interface HorecaRisePageProps {
   onInvestorEnquiry?: () => void;
 }
 
-export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRisePageProps) {
+export function HorecaRisePage({ onBack }: HorecaRisePageProps) {
   const navigate = useNavigate();
 
   const handleBack = () => {
     if (onBack) onBack();
-    else navigate('/');
+    else navigate('/#formats-section');
   };
 
-  const handleApply = () => {
-    if (onApply) onApply();
-    else navigate('/visitor');
-  };
 
-  const handleInvestorEnquiry = () => {
-    if (onInvestorEnquiry) onInvestorEnquiry();
-    else navigate('/investor');
-  };
 
   React.useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -94,13 +86,14 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
             style={{
               fontFamily: '"DM Sans", sans-serif',
               fontSize: '14px',
+              fontWeight:600,
               lineHeight: '1.7',
-              color: 'rgba(255,255,255,0.7)',
+              color: '#FFFFFF',
               maxWidth: '100%',
               marginBottom: '24px',
             }}
           >
-            India's first structured investment programme for Horeca businesses. Apply for ₹1,000. Every applicant gets investor visibility — whether selected to pitch or not.
+            India's first structured investment programme for Horeca businesses. 
           </p>
         </div>
       </section>
@@ -154,7 +147,8 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
                 wordBreak: 'break-word',
               }}
             >
-              This Is Not Just a <span style={{ color: '#C9A843' }}>Pitch Event.</span>
+              Not Just a Pitch Event. <br />
+              <span style={{ color: '#C9A843' }}>A Complete Investment Ecosystem.</span>
             </h2>
 
             {/* Paragraph */}
@@ -167,7 +161,7 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
                 marginBottom: '40px',
               }}
             >
-              It is a complete investment connection programme. With value for every applicant — whether selected to pitch live or not. The ₹1,000 you spend applying is the most efficient investment if you are serious about funding your Horeca business.
+              “A structured investment connection programme designed to give Horeca founders direct access to investors, expert guidance, and real funding opportunities. From application to post-event introductions, every stage is built to maximise visibility and outcomes.”
             </p>
 
             {/* 3 Pricing Cards — stacked on mobile */}
@@ -302,10 +296,12 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
                 <span style={{ color: '#C9A843', fontSize: '20px', fontWeight: 600, fontFamily: 'Montserrat, sans-serif' }}>01</span>
               </div>
               <h3 style={{ color: '#FFFFFF', fontSize: '20px', fontWeight: 700, marginBottom: '10px', fontFamily: 'Montserrat, sans-serif' }}>
-                Apply — ₹1,000
+                Apply | ₹1,000
               </h3>
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.7', marginBottom: '16px', fontFamily: '"DM Sans", sans-serif' }}>
-                Open to all Horeca businesses — restaurants, cloud kitchens, food brands, food tech, catering. Takes 10 minutes. Tell us about your business, stage revenue, what you are raising, and what the capital will do.
+                Open to all Horeca businesses — across formats and stages.<br />
+                The application takes approximately 10 minutes.<br />
+                Share key details: your business model, current stage, revenue, funding requirement, and capital utilisation plan.
               </p>
               <div
                 style={{
@@ -317,7 +313,7 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
               >
                 <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '13px', display: 'flex', gap: '10px', alignItems: 'flex-start', fontFamily: '"DM Sans", sans-serif' }}>
                   <span style={{ fontSize: '16px' }}>💡</span>
-                  <span>Deadline approaching — apply early. Investor panel reviews all applications in submission order.</span>
+                  <span>Early applications are prioritised — investor panel reviews submissions on a rolling basis.</span>
                 </p>
               </div>
             </div>
@@ -349,10 +345,10 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
                 <span style={{ color: '#C9A843', fontSize: '20px', fontWeight: 600, fontFamily: 'Montserrat, sans-serif' }}>02</span>
               </div>
               <h3 style={{ color: '#FFFFFF', fontSize: '20px', fontWeight: 700, marginBottom: '10px', fontFamily: 'Montserrat, sans-serif' }}>
-                Every Applicant Receives — Whether Selected or Not
+                Guaranteed Value for Every Applicant
               </h3>
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.7', marginBottom: '16px', fontFamily: '"DM Sans", sans-serif' }}>
-                This is what makes Horeca Rise different from every other pitch event.
+                This is where Horeca Rise differentiates itself.
               </p>
               <div
                 style={{
@@ -364,13 +360,13 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
               >
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '14px' }}>
                   {[
-                    'Curated investor brochure — confirmed investor names and investment focus areas',
-                    'Your entrepreneur profile shared directly with all confirmed investors',
-                    'One free 20-minute consultation slot with a business expert at Horeca Meet',
-                    'Full access to all investor panel sessions at the event',
+                    'Curated investor brochure, confirmed investor names and focus areas',
+                    'Your entrepreneur profile shared with all investors',
+                    'One free 20-minute expert consultation at Horeca Meet',
+                    'Full access to investor panel sessions',
                   ].map((item, i) => (
                     <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
-                      <span style={{ fontSize: '15px' }}>✅</span>
+                      <span className="shrink-0 w-[22px] h-[22px] rounded-[4px] flex items-center justify-center mt-0.5" style={{ background: '#C9A843' }}><svg width="17" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
                       <span style={{ color: 'rgba(255,255,255,0.8)', fontSize: '14px', fontFamily: '"DM Sans", sans-serif', lineHeight: '1.6' }}>{item}</span>
                     </li>
                   ))}
@@ -405,10 +401,11 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
                 <span style={{ color: '#C9A843', fontSize: '20px', fontWeight: 600, fontFamily: 'Montserrat, sans-serif' }}>03</span>
               </div>
               <h3 style={{ color: '#FFFFFF', fontSize: '20px', fontWeight: 700, marginBottom: '10px', fontFamily: 'Montserrat, sans-serif' }}>
-                Selection — 100 Businesses Chosen
+                Selection | Top 100 Businesses
               </h3>
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.7', fontFamily: '"DM Sans", sans-serif' }}>
-                Our panel reviews all applications. 100 businesses selected based on stage, clarity of idea, market opportunity, and use of capital. Selection communicated to all applicants.
+                Applications are reviewed based on business clarity, market potential, stage, and use of capital.<br />
+                  Top 100 high-potential businesses are shortlisted, and all applicants are informed of the outcome.
               </p>
             </div>
 
@@ -439,10 +436,10 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
                 <span style={{ color: '#C9A843', fontSize: '20px', fontWeight: 600, fontFamily: 'Montserrat, sans-serif' }}>04</span>
               </div>
               <h3 style={{ color: '#FFFFFF', fontSize: '20px', fontWeight: 700, marginBottom: '10px', fontFamily: 'Montserrat, sans-serif' }}>
-                If Selected — Additional ₹4,000 · Total ₹5,000
+                If Selected • Full Programme Access — ₹5,000 (₹1,000 + ₹4,000)
               </h3>
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.7', marginBottom: '16px', fontFamily: '"DM Sans", sans-serif' }}>
-                Your complete Horeca Rise programme investment.
+                Selected founders unlock the complete Horeca Rise experience:
               </p>
               <div
                 style={{
@@ -454,14 +451,13 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
               >
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '14px' }}>
                   {[
-                    '5-minute live pitch in front of the confirmed investor panel',
-                    '5-minute direct investor Q&A on stage',
-                    'Your business featured in the official Horeca Rise brochure',
-                    'Post-event investor introduction emails facilitated',
-                    'Priority consultation slot with Horeca experts',
+                    '5-minute live pitch + 5-minute investor Q&A',
+                    'Featured in official Horeca Rise brochure',
+                    'Post-event investor introductions',
+                    'Priority access to expert consultations',
                   ].map((item, i) => (
                     <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
-                      <span style={{ fontSize: '15px' }}>✅</span>
+                      <span className="shrink-0 w-[22px] h-[22px] rounded-[4px] flex items-center justify-center mt-0.5" style={{ background: '#C9A843' }}><svg width="17" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
                       <span style={{ color: 'rgba(255,255,255,0.8)', fontSize: '14px', fontFamily: '"DM Sans", sans-serif', lineHeight: '1.6' }}>{item}</span>
                     </li>
                   ))}
@@ -508,39 +504,18 @@ export function HorecaRisePage({ onBack, onApply, onInvestorEnquiry }: HorecaRis
                   wordBreak: 'break-word',
                 }}
               >
-                Are you an investor or VC with F&amp;B focus?
+                Are you an investor or VC focused on F&B?
               </h2>
               <p style={{ color: '#6B7280', fontSize: '14px', lineHeight: '1.8', fontFamily: '"DM Sans", sans-serif' }}>
-                Join the Horeca Rise investor panel. Review 100+ curated entrepreneur profiles before the event. Select who you want to hear pitch. The most concentrated Horeca deal flow in India this year.
+                Join the Horeca Rise investor panel to access 100+ curated founder profiles ahead of the event, shortlist ventures aligned with your thesis, and engage directly with the most promising Horeca businesses all in one highly concentrated deal flow.
               </p>
             </div>
-            <button
-              onClick={handleInvestorEnquiry}
-              style={{
-                width: '100%',
-                background: '#EBCB58',
-                color: '#0A1628',
-                fontWeight: 700,
-                fontSize: '14px',
-                padding: '16px 24px',
-                borderRadius: '6px',
-                border: 'none',
-                cursor: 'pointer',
-                fontFamily: '"DM Sans", sans-serif',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '8px',
-              }}
-            >
-              Investor Enquiry <span style={{ fontSize: '16px' }}>→</span>
-            </button>
           </div>
 
           {/* Apply CTA */}
           <div style={{ textAlign: 'center' }}>
             <button
-              onClick={handleApply}
+              onClick={() => { window.location.href = 'https://horecameet.com/investor'; }}
               style={{
                 width: '100%',
                 background: '#EBCB58',

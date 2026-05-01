@@ -40,8 +40,8 @@ export interface StarAwardCategory {
 }
 
 export const starAwardCategories: StarAwardCategory[] = [
-  { icon: '🍽️', title: 'Dining Excellence', count: '8 Categories' },
-  { icon: '🧑‍🍳', title: 'Talent & People', count: '3 Categories' },
-  { icon: '🏭', title: 'Supplier Excellence', count: '4 Categories' },
-  { icon: '🌿', title: 'Innovation', count: '1 Category' },
+  { icon: '/icon1-star.png', title: 'Dining Excellence', count: '8 Categories' },
+  { icon: '/icon2-star.png', title: 'Talent & People', count: '3 Categories' },
+  { icon: '/icon3-star.png', title: 'Supplier Excellence', count: '4 Categories' },
+  { icon: '/icon4-star.png', title: 'Innovation', count: '1 Category' },
 ];

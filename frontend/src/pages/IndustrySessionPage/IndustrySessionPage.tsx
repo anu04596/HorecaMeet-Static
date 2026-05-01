@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import Footer from '../../components/Footer/Footer';
 import './IndustrySessionPage.css';
+
 interface Session {
   time: string
   location?: string;
@@ -20,7 +22,13 @@ interface DayPlan {
 }
 
 export function IndustrySessionPage({ onBack }: { onBack?: () => void }) {
+  const navigate = useNavigate();
   const [expandedDays, setExpandedDays] = React.useState<number[]>([]);
+
+  const handleBack = () => {
+    if (onBack) onBack();
+    else navigate('/#formats-section');
+  };
 
   const toggleDay = (dayId: number) => {
     setExpandedDays(prev =>
@@ -32,7 +40,7 @@ export function IndustrySessionPage({ onBack }: { onBack?: () => void }) {
     {
       id: 1,
       title: 'Day 1 — Foundation',
-      subtitle: 'State of Horeca · Tier 2 Growth · Technology · Talent — 4 sessions',
+      subtitle: 'The event opens with the founders Lokesh, Ujjwal, and Gaurav, followed by the introduction of the celebrity jury and acknowledgment of all sponsors.',
       sessions: [
         {
           time: '10:00 AM',
@@ -87,41 +95,41 @@ export function IndustrySessionPage({ onBack }: { onBack?: () => void }) {
     {
       id: 2,
       title: 'Day 2 — Business',
-      subtitle: 'Scaling · Franchise · Procurement · ⭐ Star Awards 4:00 PM — 3 sessions',
+      subtitle: 'Scaling From One Outlet to Ten: What Nobody Tells You.Three founders share key insights on scaling challenges, costs, and essential systems.',
       sessions: [
         {
           time: '10:30 AM',
           type: 'SESSION 05 · PANEL — 3 FOUNDERS',
           title: 'Scaling From One Outlet to Ten: What Nobody Tells You',
-          description: 'Unfiltered. What breaks. What it really costs. What to systematise first. Three founders who have actually done it sharing what they wish someone had told them.',
-          tags: [{ label: 'Restaurant Owners', color: 'cinnabar' }],
+          description: 'Three founders share key insights on scaling challenges, costs, and essential systems.',
+          tags: [{ label: 'Restaurant Owners', color: 'cinnabar' }]
         },
         {
           time: '12:00 PM',
           type: 'SESSION 06 · PANEL + FRANCHISE ZONE',
           title: 'The Franchise Model: Is It Right for Your F&B Brand?',
           description: 'What franchising actually costs, how to protect quality, and when NOT to franchise. Session connects directly to the Franchise Discovery Zone in Hall C.',
-          tags: [{ label: 'Restaurant Owners', color: 'cinnabar' }],
+          tags: [{ label: 'Restaurant Owners', color: 'cinnabar' }]
         },
         {
           time: '2:00 PM',
           type: 'SESSION 07 · PANEL + LIVE Q&A',
           title: 'Procurement and Supply Chain: Cutting Costs Without Cutting Quality',
-          description: 'Hotel procurement head, ingredient supplier, and a restaurant owner with documented cost reduction. Live Q&A with exhibiting suppliers answering procurement questions on stage.',
+          description: 'Experts share cost-saving strategies, followed by a live Q&A with suppliers.',
           tags: [
             { label: 'Restaurant Owners', color: 'cinnabar' },
-            { label: 'Brands', color: 'golden' },
-          ],
+            { label: 'Brands', color: 'golden' }
+          ]
         },
         {
           time: '4:00 PM',
           type: 'STAR AWARDS CEREMONY',
           title: 'Star Awards — Winners Announced Live on Stage',
-          description: "16 awards. 4 pillars. 90 minutes. India's most honest restaurant recognition programme. The most emotionally powerful moment of the entire event.",
+          description: "16 awards across 4 pillars, recognising excellence in Horeca.",
           tags: [{ label: 'All Attendees', color: 'golden' }],
-          isCeremony: true,
-        },
-      ],
+          isCeremony: true
+        }
+      ]
     },
     {
       id: 3,
@@ -131,52 +139,52 @@ export function IndustrySessionPage({ onBack }: { onBack?: () => void }) {
         {
           time: '10:30 AM',
           type: 'SESSION 08 · INVESTOR PANEL',
-          title: "Investor Perspectives on Indian F&B: Where Is the Money Going?",
-          description: 'Three investors with active F&B portfolios. What gets funded, what does not, and why. Live exercise where investors rate real business models from the audience.',
+          title: 'Investor Perspectives on Indian F&B: Where Is the Money Going?',
+          description: 'Three active F&B investors share what gets funded and why, followed by a live evaluation of real business models.',
           tags: [
             { label: 'Restaurant Owners', color: 'cinnabar' },
-            { label: 'Live Exercise', color: 'ocean' },
-          ],
+            { label: 'Live Exercise', color: 'ocean' }
+          ]
         },
         {
           time: '12:00 PM',
           type: 'SESSION 09 · PANEL + LIVE WORKSHOP',
           title: 'Building Your Food Brand Through Social Media',
-          description: 'A food creator, D2C brand founder, and restaurant owner who measurably grew footfall through social. 15-minute live workshop — every attendee creates a 30-day content plan on their phone.',
+          description: 'A food creator, D2C founder, and restaurant owner share proven strategies, followed by a live workshop to build a 30-day content plan.',
           tags: [
             { label: 'Restaurant Owners', color: 'cinnabar' },
             { label: 'Chefs', color: 'jungle' },
-            { label: 'Bring Phone', color: 'ocean' },
-          ],
+            { label: 'Bring Phone', color: 'ocean' }
+          ]
         },
         {
           time: '2:00 PM',
           type: 'SESSION 10 · CLOSING KEYNOTE',
           title: 'The Next 5 Years in Indian Horeca: Predictions and Opportunities',
           description: '15+ years in Horeca. Ghost kitchen evolution, AI in kitchens, the new consumer, sustainability, and the categories that will dominate. Forward-looking and optimistic.',
-          tags: [{ label: 'All Attendees', color: 'golden' }],
+          tags: [{ label: 'All Attendees', color: 'golden' }]
         },
         {
           time: '3:00 PM',
           type: 'CHEF COMPETITION FINALS',
           title: 'Horeca Chef Competition — Winners Announced',
-          description: 'All 4 category winners announced live. Trophies presented by the celebrity jury. Prize money on stage.',
+          description: 'Winners are announced live, with trophies and prize money awarded on stage.',
           tags: [
             { label: 'Chefs', color: 'jungle' },
-            { label: 'All Attendees', color: 'golden' },
+            { label: 'All Attendees', color: 'golden' }
           ],
-          isCeremony: true,
+          isCeremony: true
         },
         {
           time: '4:00 PM',
           type: 'CLOSING CEREMONY',
           title: 'Closing Ceremony — Horeca Meet Expo 2026',
-          description: 'Founders close the event on stage. Every sponsor and exhibitor acknowledged. Final group photograph. Announcement of next edition.',
+          description: 'Founders close the event with acknowledgments and the next edition announcement.',
           tags: [{ label: 'All Attendees', color: 'golden' }],
-          isCeremony: true,
-        },
-      ],
-    },
+          isCeremony: true
+        }
+      ]
+    }
   ];
 
   React.useLayoutEffect(() => {
@@ -200,7 +208,7 @@ export function IndustrySessionPage({ onBack }: { onBack?: () => void }) {
       {/* Hero */}
       <section className="isp-hero">
         <div className="isp-breadcrumb">
-          <button className="isp-breadcrumb-home" onClick={onBack}>Home</button>
+          <button className="isp-breadcrumb-home" onClick={handleBack}>Home</button>
           <span className="isp-breadcrumb-sep">›</span>
           <span className="isp-breadcrumb-current">Industry Sessions</span>
         </div>
@@ -208,7 +216,7 @@ export function IndustrySessionPage({ onBack }: { onBack?: () => void }) {
           <span className="isp-hero-title-gold">Industry</span> Sessions 2026
         </h1>
         <p className="isp-hero-subtitle">
-          10 sessions. 3 days. One rule — if you have not actually done it, you do not speak about it. Practitioners only. Real answers from real operators.
+          Only speakers who have built, scaled, and operated real Horeca businesses share practical insights from experience..
         </p>
       </section>
 
@@ -260,7 +268,7 @@ export function IndustrySessionPage({ onBack }: { onBack?: () => void }) {
               </button>
 
               {isOpen && (
-                <div className="isp-sessions-list">
+               <div className="isp-sessions-list">
                   {day.sessions.map((session, idx) => (
                     <div key={idx} className="isp-session">
                       <div className="isp-session-time-row">
@@ -290,7 +298,7 @@ export function IndustrySessionPage({ onBack }: { onBack?: () => void }) {
 
       {/* CTA */}
       <section className="isp-cta-section">
-        <button className="isp-cta-btn">
+        <button className="isp-cta-btn" onClick={() => { window.location.href = 'https://horecameet.com/delegate'; }}>
           Register — All Sessions Included with Delegate Pass
         </button>
       </section>

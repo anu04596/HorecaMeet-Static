@@ -6,11 +6,21 @@
   gap: 8px;
   padding: 10px 16px;
   overflow: hidden;
+  position: relative;
 }
 
 .strip-icon {
   font-size: 14px;
   flex-shrink: 0;
+  z-index: 2;
+  background: #EBC75B;
+  padding-right: 8px;
+}
+
+.strip-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
 }
 
 .strip-text {
@@ -19,6 +29,15 @@
   font-weight: 500;
   color: #0A1628;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  animation: marquee 30s linear infinite;
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

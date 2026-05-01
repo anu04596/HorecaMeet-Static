@@ -1,0 +1,413 @@
+/* ═══════════════════════════════════════════
+   STAR AWARDS PAGE — MOBILE CSS
+   Mirrors ChefCompetitionPage.css conventions
+   ═══════════════════════════════════════════ */
+
+.star-page-container {
+  min-height: 100vh;
+  background-color: #FDFDFE;
+  font-family: 'DM Sans', sans-serif;
+  width: 100%;
+}
+
+/* ─────────────── HERO ─────────────── */
+.star-hero {
+  background: #081964;
+  width: 100%;
+  padding: 40px 20px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background blobs */
+.star-hero::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background: #C9A843;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.star-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  width: 240px;
+  height: 240px;
+  background: #4fa3e0;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.star-hero-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.star-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+
+.star-breadcrumb-home {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #EBC75B;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+}
+
+.star-breadcrumb-home:hover {
+  opacity: 0.8;
+}
+
+.star-breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 11px;
+}
+
+.star-breadcrumb-current {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+}
+
+.star-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(32px, 8vw, 52px);
+  line-height: 1.12;
+  color: #ffffff;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.star-hero-title-accent {
+  color: #C9A843;
+}
+
+.star-hero-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ─────────────── EVALUATION PROCESS ─────────────── */
+.star-process-section {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.star-process-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.star-process-card {
+  background: #091A63;
+  border-radius: 24px;
+  padding: 32px 24px;
+}
+
+.star-label-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.star-label {
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #C9A843;
+  text-transform: uppercase;
+}
+
+.star-process-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(22px, 6vw, 30px);
+  line-height: 1.15;
+  color: #ffffff;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+}
+
+.star-process-title-accent {
+  color: #C9A843;
+}
+
+/* Process steps — vertical on mobile */
+.star-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.star-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.star-step-number {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.star-step-num-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #091A63;
+}
+
+.star-step-body {
+  padding-top: 4px;
+  flex: 1;
+}
+
+.star-step-icon {
+  width: 16px;
+  height: 16px;
+  color: #C9A843;
+  margin-bottom: 6px;
+}
+
+.star-step-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0 0 4px;
+  line-height: 1.3;
+}
+
+.star-step-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─────────────── 4 PILLARS ─────────────── */
+.star-pillars-section {
+  padding: 0 20px 60px;
+  background: #ffffff;
+}
+
+.star-pillars-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.star-pillars-header {
+  margin-bottom: 32px;
+}
+
+.star-pillars-eyebrow {
+  font-size: 11px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.star-pillars-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(22px, 6vw, 32px);
+  line-height: 1.15;
+  color: #081964;
+  letter-spacing: -1px;
+}
+
+.star-pillars-title-accent {
+  color: #C9A843;
+}
+
+.star-pillars-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.star-pillar-card {
+  background: #091A63;
+  border-radius: 20px;
+  padding: 28px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.star-pillar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.star-pillar-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: rgba(201, 168, 67, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.star-pillar-icon {
+  width: 18px;
+  height: 18px;
+  color: #C9A843;
+}
+
+.star-pillar-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #C9A843;
+  line-height: 1.2;
+}
+
+.star-award-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.star-award-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.star-award-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #C9A843;
+  flex-shrink: 0;
+}
+
+.star-award-icon {
+  width: 14px;
+  height: 14px;
+  color: #C9A843;
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
+.star-award-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
+}
+
+/* Pillar 4 special */
+.star-pillar4-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.star-pillar4-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #E2C33D;
+  box-shadow: 0 0 8px #E2C33D;
+  flex-shrink: 0;
+}
+
+.star-pillar4-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ─────────────── NOMINATION CTA ─────────────── */
+.star-cta-section {
+  padding: 0 20px 80px;
+  background: #ffffff;
+}
+
+.star-cta-box {
+  background: #FAF9F5;
+  border-radius: 24px;
+  padding: 40px 24px;
+  text-align: center;
+  border: 1px solid #EDEBE5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.star-cta-trophy {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  object-fit: contain;
+}
+
+.star-cta-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(20px, 5vw, 28px);
+  line-height: 1.25;
+  color: #081964;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.star-cta-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(8, 25, 100, 0.6);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}

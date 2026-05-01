@@ -285,5 +285,17 @@
 .chef-cta-btn:hover {
   opacity: 0.9;
 }
+/* ── Prize Money Section (mobile) ── */
+.chef-prize-section {
+  padding: 0 16px 40px;
+  background: #fff;
+}
 
+.chef-prize-container {
+  max-width: 480px;
+  margin: 0 auto;
+}
 
+.chef-prize-card {
+  width: 100%;
+}

@@ -1,0 +1,283 @@
+/* ═══════════════════════════════════════════
+   CONSULTANT ZONE — MOBILE CSS
+   Mirrors ChefCompetitionPage.css conventions
+   ═══════════════════════════════════════════ */
+
+.cz-page-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  width: 100%;
+}
+
+/* ─────────────── HERO ─────────────── */
+.cz-hero {
+  background: #081964;
+  width: 100%;
+  padding: 40px 20px 48px;
+}
+
+.cz-hero-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.cz-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  margin-top: 8px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.cz-breadcrumb-home {
+  font-size: 13px;
+  color: #C9A843;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.cz-breadcrumb-home:hover {
+  opacity: 0.8;
+}
+
+.cz-breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+}
+
+.cz-breadcrumb-current {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+}
+
+.cz-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(36px, 9vw, 56px);
+  line-height: 1.1;
+  color: #ffffff;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.cz-hero-title-accent {
+  color: #C9A843;
+}
+
+.cz-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.cz-hero-tag {
+  border: 1px solid #C9A843;
+  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cz-hero-tag-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #C9A843;
+  line-height: 1;
+}
+
+.cz-hero-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+}
+
+.cz-hero-btn {
+  background: #C9A843;
+  color: #050D32;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.cz-hero-btn:hover {
+  background: #d4b553;
+}
+
+/* ─────────────── IMAGE SECTION ─────────────── */
+.cz-image-section {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.cz-image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cz-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top right, rgba(5, 13, 50, 0.25), transparent);
+  pointer-events: none;
+}
+
+/* ─────────────── BULLETS SECTION ─────────────── */
+.cz-bullets-section {
+  padding: 48px 20px;
+  background: #ffffff;
+}
+
+.cz-bullets-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cz-label-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.cz-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #C9A843;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.cz-label-line {
+  flex: 1;
+  height: 1px;
+  background: #C9A843;
+  opacity: 0.4;
+}
+
+.cz-bullets-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(30px, 6vw, 38px);
+  line-height: 1.2;
+  color: #0A1628;
+  letter-spacing: -0.5px;
+  margin-bottom: 28px;
+}
+
+.cz-bullets-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cz-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cz-bullet-dot {
+  width: 4px;
+  height: 4px;
+  background: #C9A843;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 9px;
+}
+
+.cz-bullet-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  color: #374151;
+}
+
+/* ─────────────── CTA ─────────────── */
+.cz-cta-section {
+  padding: 0 20px 80px;
+  background: #ffffff;
+}
+
+.cz-cta-box {
+  border-radius: 16px;
+  padding: 48px 24px;
+  text-align: center;
+  background: #F5F0E8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cz-cta-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.cz-cta-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(22px, 5.5vw, 30px);
+  line-height: 1.2;
+  color: #0A1628;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.cz-cta-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.cz-cta-btn {
+  background: #C9A843;
+  color: #050D32;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  display: inline-block;
+}
+
+.cz-cta-btn:hover {
+  opacity: 0.9;
+}

@@ -98,9 +98,10 @@
 }
 
 .sp-card-icon {
-  font-size: 32px; /* Reduced from 40px */
   line-height: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #1A1A1A;
 }
 

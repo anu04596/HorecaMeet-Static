@@ -5,7 +5,7 @@ import './FormatsSection.css';
 
 const FormatsSection: React.FC = () => {
   return (
-    <section className="formats-section">
+    <section className="formats-section" id="formats-section">
       {/* Section Header */}
       <div className="formats-header">
         <div className="formats-eyebrow">

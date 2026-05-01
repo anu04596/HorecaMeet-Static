@@ -54,7 +54,7 @@ const HorecaRiseTeaser: React.FC = () => {
 
       {/* CTA Button */}
       <div className="rise-cta-wrap">
-        <button className="rise-cta-btn">Apply for Horeca Rise — ₹1,000</button>
+        <button className="rise-cta-btn" onClick={() => { window.location.href = 'https://horecameet.com/investor'; }}>Apply for Horeca Rise — ₹1,000</button>
       </div>
     </section>
   );

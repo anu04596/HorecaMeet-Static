@@ -28,7 +28,9 @@ const StarAwardsTeaser: React.FC = () => {
       <div className="star-awards-categories">
         {starAwardCategories.map((cat) => (
           <div className="award-category-card" key={cat.title}>
-            <span className="award-category-icon">{cat.icon}</span>
+            <span className="award-category-icon">
+              <img src={cat.icon} alt={cat.title} style={{ width: '40px', height: '40px' }} />
+            </span>
             <p className="award-category-title">{cat.title}</p>
             <p className="award-category-count">{cat.count}</p>
           </div>

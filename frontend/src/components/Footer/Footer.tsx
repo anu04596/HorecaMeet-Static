@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer: React.FC = () => {
   const formats = [
-    'Horeca Chef Competition',
-    'Industry Sessions',
-    'Exhibition Zone',
-    'Star Awards',
-    'B2B Interaction Zones',
-    'Horeca Rise',
-    'Consultant Connect',
+    { label: 'Horeca Chef Competition', path: '/chef-competition' },
+    { label: 'Industry Sessions', path: '/industry-session' },
+    { label: 'Exhibition Zone', path: '/exhibition' },
+    { label: 'Star Awards', path: '/star-awards' },
+    { label: 'B2B Interaction Zones', path: '#' },
+    { label: 'Horeca Rise', path: '/horeca-rise' },
+    { label: 'Consultant Connect', path: '/consultant-zone' },
   ];
 
   const quickActions = [
@@ -33,10 +34,12 @@ const Footer: React.FC = () => {
     <footer className="footer">
       {/* Brand */}
       <div className="footer-brand">
-        <div className="footer-logo-row">
-          <div className="footer-logo-icon"><img src="public/logo-static.png" alt="" /></div>
-          <span className="footer-logo-text">HORECA MEET</span>
-        </div>
+        <Link to="/#formats-section" style={{ textDecoration: 'none' }}>
+          <div className="footer-logo-row">
+            <div className="footer-logo-icon"><img src="public/logo-static.png" alt="" /></div>
+            <span className="footer-logo-text">HORECA MEET</span>
+          </div>
+        </Link>
         <p className="footer-brand-desc">
           India's first curated B2B platform for the hospitality and food industry. Built from
           inside the industry — for the people who run it.
@@ -50,9 +53,9 @@ const Footer: React.FC = () => {
         <ul className="footer-link-list">
           {formats.map((f, i) => (
             <li key={i}>
-              <a href="#" className="footer-link">
-                {f}
-              </a>
+              <Link to={f.path} className="footer-link">
+                {f.label}
+              </Link>
             </li>
           ))}
         </ul>

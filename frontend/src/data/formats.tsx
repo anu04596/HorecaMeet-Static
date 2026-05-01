@@ -6,6 +6,7 @@ export interface FormatCard {
   title: string;
   description: string;
   tags: string[];
+  linkTo?: string;
 }
 
 export const formats: FormatCard[] = [
@@ -16,6 +17,7 @@ export const formats: FormatCard[] = [
     description:
       'Black Box format. 20 kitchen stations. Celebrity jury. 4 categories. Real prize money. The most honest test of a chef\'s ability.',
     tags: ['PROFESSIONAL', 'CLOUD KITCHEN', 'STUDENTS', 'BAKERY'],
+    linkTo: '/chef-competition',
   },
   {
     number: '02',
@@ -24,6 +26,7 @@ export const formats: FormatCard[] = [
     description:
       '10 sessions. Practitioners only. If you have not done it — you do not speak about it. Real answers from real operators.',
     tags: ['SCALING', 'TECHNOLOGY', 'TALENT', 'INVESTORS'],
+    linkTo: '/industry-session',
   },
   {
     number: '03',
@@ -32,6 +35,7 @@ export const formats: FormatCard[] = [
     description:
       '50+ curated brands. 5,000+ Horeca decision-makers on the floor. Category exclusivity. Pre-scheduled B2B meetings confirmed before the event.',
     tags: ['BRANDS', 'SUPPLIERS', 'CATEGORY EXCLUSIVE'],
+    linkTo: '/exhibition',
   },
   {
     number: '04',
@@ -40,6 +44,7 @@ export const formats: FormatCard[] = [
     description:
       'India\'s first independent undercover restaurant evaluation. 16 categories. No nominations. No payments. Pure merit. Already happening across NCR.',
     tags: ['16 CATEGORIES', 'UNDERCOVER', 'INDEPENDENT'],
+    linkTo: '/star-awards',
   },
   {
     number: '05',
@@ -48,6 +53,7 @@ export const formats: FormatCard[] = [
     description:
       'Pre-scheduled structured meetings. 8 private branded rooms. Your meeting schedule confirmed before you walk in. No waiting. No cold conversations.',
     tags: ['PRE-SCHEDULED', 'QUALIFIED BUYERS'],
+    linkTo: '#',
   },
   {
     number: '06',
@@ -56,6 +62,7 @@ export const formats: FormatCard[] = [
     description:
       'India\'s first Horeca investment programme. Apply for ₹1,000. Whether selected or not — your profile reaches every confirmed investor. 100 pitch live.',
     tags: ['INVESTMENT', 'LIVE PITCHES', 'INVESTORS'],
+    linkTo: '/horeca-rise',
   },
   {
     number: '07',
@@ -64,5 +71,6 @@ export const formats: FormatCard[] = [
     description:
       '15-20 Horeca specialists. Operations, technology, HR, legal, finance, growth. 20-minute slots. Pre-schedule online or walk in. Free with every delegate pass.',
     tags: ['OPERATIONS', 'FINANCE', 'LEGAL', 'FREE'],
+    linkTo: '/consultant-zone',
   },
 ];

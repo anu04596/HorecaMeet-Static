@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './HeroSection.css';
 
 const stats = [
@@ -9,6 +10,8 @@ const stats = [
 ];
 
 const HeroSection: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="hero-section">
       {/* Hero First - Badge + Title */}
@@ -40,8 +43,8 @@ const HeroSection: React.FC = () => {
       <div className="hero-second">
 
         <div className="hero-actions">
-          <button className="btn-register">Register Now — Free for Delegates</button>
-          <button className="btn-explore">Explore 7 Formats ↓</button>
+          <button className="btn-register" onClick={() => navigate('/register')}>Register Now — Free for Delegates</button>
+          <button className="btn-explore" onClick={() => {document.querySelector(".format-card")?.scrollIntoView({ behavior: "smooth" });}}>Explore 7 Formats ↓</button>
         </div>
         <div className="hero-stats">
           {stats.map((stat) => (

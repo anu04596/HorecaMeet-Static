@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { juryMembers } from '../../data/jury';
 import './JuryTeaser.css';
 
@@ -11,7 +10,6 @@ const juryImages: Record<string, string> = {
 };
 
 const JuryTeaser: React.FC = () => {
-    const navigate = useNavigate();
 
     return (
         <section className="jury-teaser">
@@ -69,7 +67,7 @@ const JuryTeaser: React.FC = () => {
                 <p className="jury-social-label">Combined Social Following of the Jury Panel</p>
                 <button
                     className="jury-register-btn"
-                    onClick={() => navigate('/chef-competition')}
+                    onClick={() => { window.location.href = 'https://horecameet.com/chef-category'; }}
                 >
                     Register for Chef Competition
                 </button>
